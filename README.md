@@ -1,32 +1,39 @@
 # Quantum Noise-Aware Signal Classifier
 
-This is a small project where I tried combining basic machine learning with a simple quantum circuit.
+This project presents a simple hybrid approach combining classical machine learning and quantum computing for signal classification.
 
-The idea is to generate some noisy signal data, clean it a bit, and then see how both a classical model and a quantum model perform on it.
+The system generates noisy signal data, applies basic filtering, and compares the performance of a classical model with a quantum circuit-based model.
 
 
 
-## What this project does
+## Overview
 
-* Creates random noisy signal data
-* Applies a simple noise filtering method
-* Uses a classical model (Logistic Regression)
-* Uses a quantum circuit for prediction
-* Compares both results
+The goal of this project is to explore how quantum circuits can be used alongside traditional machine learning methods for classification tasks, especially in scenarios involving noisy signals.
 
--
 
-## How to run
 
-Install the required libraries:
+## Features
 
-```bash
+* Synthetic noisy signal generation
+* Noise reduction using moving average filtering
+* Classical classification using Logistic Regression
+* Quantum-based prediction using Qiskit
+* Performance comparison between classical and quantum approaches
+* Visualization of results
+
+
+
+## How to Run
+
+Install dependencies:
+
+```bash id="p8mr53"
 pip install -r requirements.txt
 ```
 
 Run the project:
 
-```bash
+```bash id="6ys96x"
 python main.py
 ```
 
@@ -34,24 +41,27 @@ python main.py
 
 ## Output
 
-* Prints accuracy of both models
-* Shows a simple graph comparing them
+* Displays accuracy of both models in the terminal
+* Generates a bar graph comparing classical and quantum performance
 
 
 
-## Why I made this
-
-I wanted to explore how quantum computing can be used along with machine learning, especially for signal-based problems.
-
-
-
-## Tech used
+## Technologies Used
 
 * Python
 * Qiskit
 * Scikit-learn
 * NumPy
 * Matplotlib
+
+
+
+## Future Scope
+
+* Implementation of trainable quantum circuits (VQC)
+* Use of multi-qubit systems for better performance
+* Integration with real-world signal datasets
+* Extension to advanced sensing applications
 
 
 
